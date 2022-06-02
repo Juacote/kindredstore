@@ -16,15 +16,10 @@ body{
 .Menu{
     font-size: 23px;
     font-style: normal;
-    padding: 0px 200px 0 80px;
+    padding: 0px 120px 0 0px;
     margin-right: auto;
     margin-left: auto;
     font-family: 'Bangers', cursive;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    align-content: center;
 }
 
      
@@ -44,6 +39,10 @@ main{
     padding-left: 20px;
     margin: 18px;
     font-family: 'DM Sans', sans-serif;
+}
+
+.lupa{
+    height: 24px;
 }
 
 .ps4Flex{
@@ -67,7 +66,7 @@ main{
     margin: 40px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: space-around;
 }
 
 .consoleFlex{
@@ -93,13 +92,24 @@ main{
 }
 
 .consoleImage{
-    height: 100px;
-    width: 100px;
+    height: 140px;
+    width: 140px;
+    padding: 12px;
+    margin: 12px;
 }
 
 .accesoriesImage{
-    height: 100px;
-    width: 100px;
+    height: 140px;
+    width: 140px;
+    padding: 12px;
+    margin: 12px;
+}
+
+.gamesImage{
+    height: 140px;
+    width: 140px;
+    padding: 12px;
+    margin: 12px;
 }
 
 .games{
@@ -120,6 +130,8 @@ main{
 .news{
     font-size: 44px;
     text-decoration: underline black;
+    padding: 20px;
+    margin: 20px;
 }
 
 .principalImage{
@@ -186,6 +198,13 @@ a{
     max-width: 150%;
     height: 400px;
     max-height: 100%;
+    padding: 20px;
+    margin: 20px;
+}
+
+.gamesInfo{
+    padding: 20px;
+    margin: 20px;
 }
 
 
@@ -218,6 +237,17 @@ a{
     max-height: 100%;
 }
 
+.slideIndex{
+    height: 420px;
+    width: 1024px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.buttonColor{
+    color: #000;
+}
+
 .endPage{
     display: grid;
     grid-template-areas: 
@@ -234,7 +264,7 @@ a{
     .kindredImage{
         display: none;
     }
-    
+
 }
 
 @media screen and (max-width: 480px) {
