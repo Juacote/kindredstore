@@ -99,17 +99,22 @@ main{
 }
 
 .accesoriesImage{
-    height: 140px;
-    width: 140px;
+    height: 220px;
+    width: 220px;
     padding: 12px;
     margin: 12px;
 }
 
 .gamesImage{
-    height: 140px;
-    width: 140px;
+    height: 220px;
+    width: 220px;
     padding: 12px;
     margin: 12px;
+}
+
+.cardSize{
+    height: 380px;
+    max-height: 100%;
 }
 
 .games{
@@ -170,16 +175,13 @@ a{
 }
 
 .gamesList{
-    font-size: 28px;
+    font-size: 20px;
     font-style: normal;
-    padding-right: 40px;
-    margin: 16px;
 }
 
 .accesoriesList{
     font-size: 28px;
     font-style: normal;
-    margin: 16px;
 }
 
 .consoleList{
@@ -210,11 +212,13 @@ a{
 
 .medios{
     grid-area: medios;
-    text-align: justify;
+    text-align: center;
+    padding-top: 60px;
 }
 
 .metodos{
     grid-area: metodos;
+    justify-self: center;
 }
 
 .copyright{
@@ -223,13 +227,13 @@ a{
 
 .horario{
     grid-area: horario;
-    padding-left: 40px;
+    text-align: center;
 }
 
 .mapa{
     grid-area: mapa;
     margin: 8px;
-    padding-right: 20px;
+    padding-right: 120px;
     padding-top: 20px;
     width: 800px;
     max-width: 100%;
@@ -313,6 +317,11 @@ a{
         "mapa"
         "horario";
     }
+
+    .cardSize{
+        margin: 20px;
+        height: 440px;
+    }
     
 }
 
@@ -362,5 +371,9 @@ a{
         "horario";
     }
     
+    .cardSize{
+        margin: 40px;
+    }
+
 }
 
