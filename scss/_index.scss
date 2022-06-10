@@ -1,0 +1,130 @@
+body{
+    background-color: $bgFondo;
+}
+
+
+header{
+    h1{
+        font-size: 60px;
+        font-family: 'Bangers', cursive;
+        font-style: normal;
+        padding-left: 30px;
+        padding-bottom: 20px;
+        text-decoration: underline $bgUnderline;
+    }
+
+    nav{
+        font-size: 23px;
+        font-style: normal;
+        padding: 0px 120px 0 0px;
+        margin-right: auto;
+        margin-left: auto;
+        font-family: 'Bangers', cursive;
+        @media screen and (max-width: 480px) {
+            flex-direction: column;
+        }
+    }
+}
+
+footer{
+    font-size: 20px;
+    font-style: normal;
+    padding: 20px;
+    padding-left: 20px;
+    font-family: 'Bangers', cursive;
+    margin: 8px 8px;
+}
+
+.lupa{
+    height: 24px;
+}
+
+.slideIndex{
+    height: 420px;
+    width: 1024px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.medios{
+    grid-area: medios;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.metodos{
+    grid-area: metodos;
+    justify-self: center;
+}
+
+.copyright{
+    grid-area: copyright;
+}
+
+.horario{
+    grid-area: horario;
+    text-align: center;
+}
+
+.mapa{
+    grid-area: mapa;
+    margin: 8px;
+    padding-right: 120px;
+    padding-top: 20px;
+    width: 800px;
+    max-width: 100%;
+    height: 300px;
+    max-height: 100%;
+}
+
+.endPage{
+    display: grid;
+    grid-template-areas: 
+    "mapa medios medios"
+    "mapa metodos metodos"
+    "horario copyright copyright";
+}
+
+@media screen and (max-width: 480px) {
+    .medios{
+        display: none;
+    }
+
+    .metodos{
+        display: none;
+    }
+
+    .copyright{
+        display: none;
+    }
+    
+    .endPage{
+        display: grid;
+        grid-template-areas:
+        "mapa"
+        "mapa"
+        "horario";
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .medios{
+        display: none;
+    }
+
+    .metodos{
+        display: none;
+    }
+
+    .copyright{
+        display: none;
+    }
+    
+    .endPage{
+        display: grid;
+        grid-template-areas:
+        "mapa"
+        "mapa"
+        "horario";
+    }
+}    
