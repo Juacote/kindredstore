@@ -1,3 +1,285 @@
+.switchFlex, .ps5Flex, .ps4Flex {
+  padding: 0px 80px 0 80px;
+  margin: 40px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+body {
+  background-color: rgb(223, 223, 223);
+}
+
+header h1 {
+  font-size: 60px;
+  font-family: "Bangers", cursive;
+  font-style: normal;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  text-decoration: underline rgb(207, 33, 33);
+}
+header nav {
+  font-size: 23px;
+  font-style: normal;
+  padding: 0px 120px 0 0px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: "Bangers", cursive;
+}
+@media screen and (max-width: 480px) {
+  header nav {
+    flex-direction: column;
+  }
+}
+
+footer {
+  font-size: 20px;
+  font-style: normal;
+  padding: 20px;
+  padding-left: 20px;
+  font-family: "Bangers", cursive;
+  margin: 8px 8px;
+}
+
+.lupa {
+  height: 24px;
+}
+
+.slideIndex {
+  height: 420px;
+  width: 1024px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.medios {
+  grid-area: medios;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.metodos {
+  grid-area: metodos;
+  justify-self: center;
+}
+
+.copyright {
+  grid-area: copyright;
+}
+
+.horario {
+  grid-area: horario;
+  text-align: center;
+}
+
+.mapa {
+  grid-area: mapa;
+  margin: 8px;
+  padding-right: 120px;
+  padding-top: 20px;
+  width: 800px;
+  max-width: 100%;
+  height: 300px;
+  max-height: 100%;
+}
+
+.endPage {
+  display: grid;
+  grid-template-areas: "mapa medios medios" "mapa metodos metodos" "horario copyright copyright";
+}
+
+@media screen and (max-width: 480px) {
+  .medios {
+    display: none;
+  }
+  .metodos {
+    display: none;
+  }
+  .copyright {
+    display: none;
+  }
+  .endPage {
+    display: grid;
+    grid-template-areas: "mapa" "mapa" "horario";
+  }
+}
+@media screen and (max-width: 768px) {
+  .medios {
+    display: none;
+  }
+  .metodos {
+    display: none;
+  }
+  .copyright {
+    display: none;
+  }
+  .endPage {
+    display: grid;
+    grid-template-areas: "mapa" "mapa" "horario";
+  }
+}
+.topGames {
+  font-size: 30px;
+  font-style: normal;
+  padding: 8px 0 8px 0;
+  text-decoration: underline black;
+  margin: 8px 8px;
+}
+
+.youtubeGames {
+  font-size: 12px;
+  font-style: normal;
+  margin-left: auto;
+  padding-right: auto;
+  width: 800px;
+  max-width: 150%;
+  height: 400px;
+  max-height: 100%;
+  padding: 20px;
+  margin: 20px;
+}
+@media screen and (max-width: 480px) {
+  .youtubeGames {
+    height: 400px;
+    width: 100%;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .youtubeGames {
+    height: 400px;
+    width: 100%;
+    padding-right: 40px;
+  }
+}
+
+.news {
+  font-size: 44px;
+  text-decoration: underline black;
+  padding: 20px;
+  margin: 20px;
+}
+
+.gamesInfo {
+  padding: 20px;
+  margin: 20px;
+}
+
+.price {
+  padding: 20px;
+  margin: 20px;
+}
+
+h3 {
+  font-size: 44px;
+  text-decoration: underline black;
+  padding: 40px;
+}
+
+@media screen and (max-width: 480px) {
+  .ps4Flex {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ps4Flex {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ps5Flex {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ps5Flex {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .switchFlex {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 768px) {
+  .switchFlex {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+  }
+}
+
+ol {
+  list-style: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.consoleMenu {
+  font-size: 32px;
+  font-style: normal;
+  padding: 40px;
+  text-decoration: underline black;
+  margin: 16px 16px;
+}
+
+.gamesImage {
+  height: 220px;
+  width: 220px;
+  padding: 12px;
+  margin: 12px;
+}
+
+.gamesList {
+  font-size: 20px;
+  font-style: normal;
+}
+
+.cardSize {
+  height: 380px;
+  max-height: 100%;
+}
+@media screen and (max-width: 480px) {
+  .cardSize {
+    margin: 20px;
+    height: 440px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .cardSize {
+    margin: 20px;
+    height: 440px;
+  }
+}
+
+.kindredImage {
+  padding: 40px;
+  margin: 40px;
+  width: 800px;
+  max-width: 100%;
+  height: 450px;
+}
+
+.principalImage {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
 body {
   background-color: rgb(223, 223, 223);
 }

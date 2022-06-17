@@ -1,0 +1,26 @@
+@mixin gamesTitle {
+    font-size: 30px;
+    font-style: normal;
+    padding: 8px 0 8px 0;
+    text-decoration: underline black;
+    margin: 8px 8px;
+}
+
+@mixin iframe {
+    font-size: 12px;
+    font-style: normal;
+    margin-left: auto;
+    padding-right: auto;
+    width: 800px;
+    max-width: 150%;
+    height: 400px;
+    max-height: 100%;
+    padding: 20px;
+    margin: 20px;
+}
+
+@mixin flexMedia {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}

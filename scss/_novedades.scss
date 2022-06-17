@@ -1,0 +1,35 @@
+.topGames{
+    @include gamesTitle;
+}
+
+.youtubeGames{
+    @include iframe;
+    @media screen and (max-width: 480px) {
+        height: 400px;
+        width: 100%;
+        padding-right: 40px;
+    }
+    @media screen and (max-width: 768px) {
+        height: 400px;
+        width: 100%;
+        padding-right: 40px;
+    }
+}
+
+.news{
+    font-size: 44px;
+    text-decoration: underline black;
+    padding: 20px;
+    margin: 20px;
+}
+
+.gamesInfo{
+    padding: 20px;
+    margin: 20px;
+}
+
+.price{
+    padding: 20px;
+    margin: 20px;
+}
+

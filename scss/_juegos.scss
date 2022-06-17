@@ -1,0 +1,92 @@
+h3{
+    font-size: map-get($h3 , h3-fontsize);
+    text-decoration: map-get($h3 , h3-decoration);
+    padding: map-get($h3 , h3-padding)
+}
+
+.ps4Flex{
+    @extend %console-flex;
+    @media screen and (max-width: 480px) {
+        @include flexMedia;
+    }
+    @media screen and (max-width: 768px) {
+        @include flexMedia;
+    }
+}
+
+.ps5Flex{
+    @extend %console-flex;
+    @media screen and (max-width: 480px) {
+        @include flexMedia;
+    }
+    @media screen and (max-width: 768px) {
+        @include flexMedia;
+    }
+}
+
+.switchFlex{
+    @extend %console-flex;
+    @media screen and (max-width: 480px) {
+        @include flexMedia;
+    }
+    @media screen and (max-width: 768px) {
+        @include flexMedia;
+    }
+}
+
+
+ol{
+    list-style: none;
+}
+
+ul{
+    list-style: none;
+}
+
+
+.consoleMenu{
+    font-size: 32px;
+    font-style: normal;
+    padding: 40px;
+    text-decoration: underline black;
+    margin: 16px 16px;
+}
+
+.gamesImage{
+    height: 220px;
+    width: 220px;
+    padding: 12px;
+    margin: 12px;
+}
+
+.gamesList{
+    font-size: 20px;
+    font-style: normal;
+}
+
+.cardSize{
+    height: 380px;
+    max-height: 100%;
+    @media screen and (max-width: 480px) {
+        margin: 20px;
+        height: 440px;
+    }
+    @media screen and (max-width: 768px) {
+        margin: 20px;
+        height: 440px;
+    }
+}
+
+.kindredImage{
+    padding: 40px;
+    margin: 40px;
+    width: 800px;
+    max-width: 100%;
+    height: 450px;
+}
+
+.principalImage{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
