@@ -24,3 +24,9 @@
     flex-flow: column wrap;
     justify-content: flex-start;
 }
+
+@mixin mediaFlex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}

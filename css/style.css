@@ -1,4 +1,5 @@
-.switchFlex, .ps5Flex, .ps4Flex {
+@charset "UTF-8";
+.consoleFlex, .switchFlex, .ps5Flex, .ps4Flex {
   padding: 0px 80px 0 80px;
   margin: 40px;
   display: flex;
@@ -33,7 +34,6 @@ header nav {
 }
 
 footer {
-  font-size: 20px;
   font-style: normal;
   padding: 20px;
   padding-left: 20px;
@@ -45,6 +45,33 @@ footer {
   height: 24px;
 }
 
+.instagram {
+  height: 60px;
+  padding: 0px;
+  list-style: none;
+}
+
+.instagram:hover {
+  background-color: #cc2199;
+}
+
+.facebook {
+  height: 60px;
+  align-content: flex-start;
+}
+
+.facebook:hover {
+  background-color: #3b5998;
+}
+
+.youtube {
+  height: 60px;
+}
+
+.youtube:hover {
+  background-color: #c4302b;
+}
+
 .slideIndex {
   height: 420px;
   width: 1024px;
@@ -52,10 +79,18 @@ footer {
   margin: 20px;
 }
 
-.medios {
-  grid-area: medios;
-  text-align: center;
-  padding-top: 60px;
+.informaciónUtil {
+  grid-area: información;
+  font-size: 28px;
+  text-align: justify;
+  padding-top: 40px;
+}
+
+.contacto {
+  grid-area: contacto;
+  font-size: 28px;
+  text-align: justify;
+  padding-top: 40px;
 }
 
 .metodos {
@@ -67,9 +102,27 @@ footer {
   grid-area: copyright;
 }
 
+.linksFooter {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.linksFooter:hover {
+  text-decoration: none;
+  color: white;
+}
+
 .horario {
   grid-area: horario;
   text-align: center;
+}
+
+.redes {
+  grid-area: redes;
+  font-size: 28px;
+  text-align: justify;
+  padding-top: 40px;
 }
 
 .mapa {
@@ -79,13 +132,19 @@ footer {
   padding-top: 20px;
   width: 800px;
   max-width: 100%;
-  height: 300px;
+  height: 360px;
   max-height: 100%;
 }
 
 .endPage {
   display: grid;
-  grid-template-areas: "mapa medios medios" "mapa metodos metodos" "horario copyright copyright";
+  grid-template-areas: "mapa información contacto redes" "mapa información contacto redes" "mapa copyright copyright copyright";
+}
+
+.mediaFlex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
 
 @media screen and (max-width: 480px) {
@@ -99,8 +158,9 @@ footer {
     display: none;
   }
   .endPage {
-    display: grid;
-    grid-template-areas: "mapa" "mapa" "horario";
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
   }
 }
 @media screen and (max-width: 768px) {
@@ -114,8 +174,9 @@ footer {
     display: none;
   }
   .endPage {
-    display: grid;
-    grid-template-areas: "mapa" "mapa" "horario";
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
   }
 }
 .topGames {
@@ -239,7 +300,7 @@ ul {
 
 .gamesImage {
   height: 220px;
-  width: 220px;
+  width: 200px;
   padding: 12px;
   margin: 12px;
 }
@@ -247,11 +308,15 @@ ul {
 .gamesList {
   font-size: 20px;
   font-style: normal;
+  overflow: hidden;
 }
 
 .cardSize {
   height: 380px;
+  width: 240px;
+  max-width: 100%;
   max-height: 100%;
+  overflow: hidden;
 }
 @media screen and (max-width: 480px) {
   .cardSize {
@@ -278,6 +343,92 @@ ul {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+  .consoleFlex {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 768px) {
+  .consoleFlex {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+  }
+}
+
+.accesories {
+  font-size: 44px;
+  text-decoration: underline black;
+}
+
+.accesoriesImage {
+  height: 220px;
+  width: 220px;
+  padding: 12px;
+  margin: 12px;
+}
+
+.form {
+  width: 840px;
+  height: 440px;
+  background: #e6e6e6;
+  border-radius: 8px;
+  box-shadow: 0 0 40px -10px #000;
+  margin: calc(50vh - 220px) auto;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+
+.contactUs {
+  margin: 20px 0;
+  padding-bottom: 10px;
+  width: 200px;
+  color: #78788c;
+  border-bottom: 3px solid #78788c;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s;
+  border-bottom: 2px solid #bebed2;
+}
+
+.buttonContact {
+  position: absolute;
+  right: 45%;
+  align-content: center;
+  padding: 8px 12px;
+  margin: 20px 0 0;
+  font-family: "Montserrat", sans-serif;
+  border: 2px solid #78788c;
+  background: 0;
+  color: #5a5a6e;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.buttonContact:hover {
+  background: #78788c;
+  color: #fff;
+}
+
+input:focus {
+  border-bottom: 2px solid #78788c;
 }
 
 body {
@@ -307,7 +458,6 @@ header nav {
 }
 
 footer {
-  font-size: 20px;
   font-style: normal;
   padding: 20px;
   padding-left: 20px;
@@ -319,6 +469,33 @@ footer {
   height: 24px;
 }
 
+.instagram {
+  height: 60px;
+  padding: 0px;
+  list-style: none;
+}
+
+.instagram:hover {
+  background-color: #cc2199;
+}
+
+.facebook {
+  height: 60px;
+  align-content: flex-start;
+}
+
+.facebook:hover {
+  background-color: #3b5998;
+}
+
+.youtube {
+  height: 60px;
+}
+
+.youtube:hover {
+  background-color: #c4302b;
+}
+
 .slideIndex {
   height: 420px;
   width: 1024px;
@@ -326,10 +503,18 @@ footer {
   margin: 20px;
 }
 
-.medios {
-  grid-area: medios;
-  text-align: center;
-  padding-top: 60px;
+.informaciónUtil {
+  grid-area: información;
+  font-size: 28px;
+  text-align: justify;
+  padding-top: 40px;
+}
+
+.contacto {
+  grid-area: contacto;
+  font-size: 28px;
+  text-align: justify;
+  padding-top: 40px;
 }
 
 .metodos {
@@ -341,9 +526,27 @@ footer {
   grid-area: copyright;
 }
 
+.linksFooter {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.linksFooter:hover {
+  text-decoration: none;
+  color: white;
+}
+
 .horario {
   grid-area: horario;
   text-align: center;
+}
+
+.redes {
+  grid-area: redes;
+  font-size: 28px;
+  text-align: justify;
+  padding-top: 40px;
 }
 
 .mapa {
@@ -353,13 +556,19 @@ footer {
   padding-top: 20px;
   width: 800px;
   max-width: 100%;
-  height: 300px;
+  height: 360px;
   max-height: 100%;
 }
 
 .endPage {
   display: grid;
-  grid-template-areas: "mapa medios medios" "mapa metodos metodos" "horario copyright copyright";
+  grid-template-areas: "mapa información contacto redes" "mapa información contacto redes" "mapa copyright copyright copyright";
+}
+
+.mediaFlex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
 
 @media screen and (max-width: 480px) {
@@ -373,8 +582,9 @@ footer {
     display: none;
   }
   .endPage {
-    display: grid;
-    grid-template-areas: "mapa" "mapa" "horario";
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
   }
 }
 @media screen and (max-width: 768px) {
@@ -388,8 +598,9 @@ footer {
     display: none;
   }
   .endPage {
-    display: grid;
-    grid-template-areas: "mapa" "mapa" "horario";
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
   }
 }
 

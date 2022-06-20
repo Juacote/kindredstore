@@ -27,7 +27,6 @@ header{
 }
 
 footer{
-    font-size: 20px;
     font-style: normal;
     padding: 20px;
     padding-left: 20px;
@@ -39,6 +38,33 @@ footer{
     height: 24px;
 }
 
+.instagram{
+    height: 60px;
+    padding: 0px;
+    list-style: none;
+}
+
+.instagram:hover{
+    background-color: #cc2199;
+}
+
+.facebook{
+    height: 60px;
+    align-content: flex-start;
+}
+
+.facebook:hover{
+    background-color: #3b5998;
+}
+
+.youtube{
+    height: 60px;
+}
+
+.youtube:hover{
+    background-color: #c4302b;
+}
+
 .slideIndex{
     height: 420px;
     width: 1024px;
@@ -46,10 +72,18 @@ footer{
     margin: 20px;
 }
 
-.medios{
-    grid-area: medios;
-    text-align: center;
-    padding-top: 60px;
+.informaciónUtil{
+    grid-area: información;
+    font-size: 28px;
+    text-align: justify;
+    padding-top: 40px;
+}
+
+.contacto{
+    grid-area: contacto;
+    font-size: 28px;
+    text-align: justify;
+    padding-top: 40px;
 }
 
 .metodos{
@@ -61,9 +95,29 @@ footer{
     grid-area: copyright;
 }
 
+.linksFooter{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;    
+}
+
+.linksFooter:hover{
+    text-decoration: none;
+    color: white;
+}
+
+
 .horario{
     grid-area: horario;
     text-align: center;
+}
+
+
+.redes{
+    grid-area: redes;
+    font-size: 28px;
+    text-align: justify;
+    padding-top: 40px;
 }
 
 .mapa{
@@ -73,17 +127,22 @@ footer{
     padding-top: 20px;
     width: 800px;
     max-width: 100%;
-    height: 300px;
+    height: 360px;
     max-height: 100%;
 }
 
 .endPage{
     display: grid;
     grid-template-areas: 
-    "mapa medios medios"
-    "mapa metodos metodos"
-    "horario copyright copyright";
+    "mapa información contacto redes"
+    "mapa información contacto redes"
+    "mapa copyright copyright copyright";
 }
+
+.mediaFlex{
+    @include mediaFlex
+}
+
 
 @media screen and (max-width: 480px) {
     .medios{
@@ -99,11 +158,7 @@ footer{
     }
     
     .endPage{
-        display: grid;
-        grid-template-areas:
-        "mapa"
-        "mapa"
-        "horario";
+        @include flexMedia
     }
 }
 
@@ -121,10 +176,6 @@ footer{
     }
     
     .endPage{
-        display: grid;
-        grid-template-areas:
-        "mapa"
-        "mapa"
-        "horario";
+        @include flexMedia
     }
 }    
