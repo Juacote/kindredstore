@@ -86,10 +86,6 @@ footer{
     padding-top: 40px;
 }
 
-.metodos{
-    grid-area: metodos;
-    justify-self: center;
-}
 
 .copyright{
     grid-area: copyright;
@@ -106,13 +102,6 @@ footer{
     color: white;
 }
 
-
-.horario{
-    grid-area: horario;
-    text-align: center;
-}
-
-
 .redes{
     grid-area: redes;
     font-size: 28px;
@@ -126,7 +115,7 @@ footer{
     padding-right: 120px;
     padding-top: 20px;
     width: 800px;
-    max-width: 100%;
+    max-width: 150%;
     height: 360px;
     max-height: 100%;
 }
@@ -145,36 +134,20 @@ footer{
 
 
 @media screen and (max-width: 480px) {
-    .medios{
-        display: none;
+    .mapa{
+        width: 100%;
     }
 
-    .metodos{
-        display: none;
-    }
-
-    .copyright{
-        display: none;
-    }
-    
     .endPage{
         @include flexMedia
     }
 }
 
 @media screen and (max-width: 768px) {
-    .medios{
-        display: none;
+    .mapa{
+        width: 100%;
     }
 
-    .metodos{
-        display: none;
-    }
-
-    .copyright{
-        display: none;
-    }
-    
     .endPage{
         @include flexMedia
     }
