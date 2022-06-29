@@ -60,12 +60,15 @@ ul{
 }
 
 .gamesList{
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
 }
 
 .cardSize{
-    height: 420px;
+    transition: transform .2s;
+    height: 440px;
+    outline: none;
+    box-sizing: border-box;
     width: 240px;
     max-width: 100%;
     max-height: 100%;
@@ -79,6 +82,27 @@ ul{
         height: 440px;
     }
 }
+
+.cardSize:hover {
+    transform: scale(1.1);
+}
+
+.cardButton{
+border: none;
+outline: 0;
+padding: 12px;
+color: white;
+background-color: black;
+text-align: center;
+cursor: pointer;
+width: 100%;
+font-size: 18px;
+}
+
+.cardButton:hover {
+    opacity: 0.7;
+}
+
 
 .kindredImage{
     padding: 40px;

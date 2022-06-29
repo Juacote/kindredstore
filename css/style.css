@@ -33,6 +33,13 @@ header nav {
   }
 }
 
+.slideIndex {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 20px;
+  margin: 20px;
+}
+
 footer {
   font-style: normal;
   padding: 20px;
@@ -73,8 +80,6 @@ footer {
 }
 
 .slideIndex {
-  height: 420px;
-  width: 1024px;
   padding: 20px;
   margin: 20px;
 }
@@ -95,6 +100,7 @@ footer {
 
 .copyright {
   grid-area: copyright;
+  padding-left: 36px;
 }
 
 .linksFooter {
@@ -284,12 +290,15 @@ ul {
 }
 
 .gamesList {
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
 }
 
 .cardSize {
-  height: 420px;
+  transition: transform 0.2s;
+  height: 440px;
+  outline: none;
+  box-sizing: border-box;
   width: 240px;
   max-width: 100%;
   max-height: 100%;
@@ -306,6 +315,26 @@ ul {
     margin: 20px;
     height: 440px;
   }
+}
+
+.cardSize:hover {
+  transform: scale(1.1);
+}
+
+.cardButton {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.cardButton:hover {
+  opacity: 0.7;
 }
 
 .kindredImage {
@@ -338,7 +367,7 @@ ul {
 }
 
 .consoleList {
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
 }
 
@@ -355,7 +384,7 @@ ul {
 }
 
 .accesoriesList {
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
 }
 
@@ -363,6 +392,13 @@ ul {
   font-size: 20px;
   padding-top: 120px;
   padding-bottom: 120px;
+}
+
+.sendBottom {
+  background-color: rgb(210, 210, 210);
+  color: black;
+  border-color: black;
+  font-size: 20px;
 }
 
 body {
@@ -389,6 +425,13 @@ header nav {
   header nav {
     flex-direction: column;
   }
+}
+
+.slideIndex {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 20px;
+  margin: 20px;
 }
 
 footer {
@@ -431,8 +474,6 @@ footer {
 }
 
 .slideIndex {
-  height: 420px;
-  width: 1024px;
   padding: 20px;
   margin: 20px;
 }
@@ -453,6 +494,7 @@ footer {
 
 .copyright {
   grid-area: copyright;
+  padding-left: 36px;
 }
 
 .linksFooter {
