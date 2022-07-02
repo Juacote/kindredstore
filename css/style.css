@@ -9,6 +9,7 @@
 
 body {
   background-color: rgb(223, 223, 223);
+  overflow-x: hidden;
 }
 
 header h1 {
@@ -17,6 +18,8 @@ header h1 {
   font-style: normal;
   padding-left: 30px;
   padding-bottom: 20px;
+  color: black;
+  text-decoration: none;
   text-decoration: underline rgb(207, 33, 33);
 }
 header nav {
@@ -33,6 +36,15 @@ header nav {
   }
 }
 
+.firstTitle {
+  color: black;
+  text-decoration: underline rgb(207, 33, 33);
+}
+
+.firstTitle:hover {
+  color: black;
+}
+
 .slideIndex {
   max-width: 100%;
   max-height: 100%;
@@ -46,6 +58,10 @@ footer {
   padding-left: 20px;
   font-family: "Bangers", cursive;
   margin: 8px 8px;
+}
+
+.carrito {
+  height: 28px;
 }
 
 .lupa {
@@ -127,7 +143,7 @@ footer {
   padding-right: 120px;
   padding-top: 20px;
   width: 800px;
-  max-width: 150%;
+  max-width: 100%;
   height: 360px;
   max-height: 100%;
 }
@@ -140,7 +156,7 @@ footer {
 .mediaFlex {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: left;
 }
 
 @media screen and (max-width: 480px) {
@@ -395,14 +411,19 @@ ul {
 }
 
 .sendBottom {
-  background-color: rgb(210, 210, 210);
-  color: black;
+  color: white;
+  background-color: black;
   border-color: black;
-  font-size: 20px;
+  font-size: 26px;
+}
+
+.sendBottom:hover {
+  opacity: 0.7;
 }
 
 body {
   background-color: rgb(223, 223, 223);
+  overflow-x: hidden;
 }
 
 header h1 {
@@ -411,6 +432,8 @@ header h1 {
   font-style: normal;
   padding-left: 30px;
   padding-bottom: 20px;
+  color: black;
+  text-decoration: none;
   text-decoration: underline rgb(207, 33, 33);
 }
 header nav {
@@ -427,6 +450,15 @@ header nav {
   }
 }
 
+.firstTitle {
+  color: black;
+  text-decoration: underline rgb(207, 33, 33);
+}
+
+.firstTitle:hover {
+  color: black;
+}
+
 .slideIndex {
   max-width: 100%;
   max-height: 100%;
@@ -440,6 +472,10 @@ footer {
   padding-left: 20px;
   font-family: "Bangers", cursive;
   margin: 8px 8px;
+}
+
+.carrito {
+  height: 28px;
 }
 
 .lupa {
@@ -521,7 +557,7 @@ footer {
   padding-right: 120px;
   padding-top: 20px;
   width: 800px;
-  max-width: 150%;
+  max-width: 100%;
   height: 360px;
   max-height: 100%;
 }
@@ -534,7 +570,7 @@ footer {
 .mediaFlex {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: left;
 }
 
 @media screen and (max-width: 480px) {

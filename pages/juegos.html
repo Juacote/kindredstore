@@ -22,7 +22,9 @@
 
     <header>
 
-        <h1 class="firstTitle animate__animated animate__lightSpeedInRight">Kindred Store</h1>
+      <h1 class="firstTitle animate__animated animate__lightSpeedInRight">
+        <a href="../index.html" class="firstTitle">Kindred Store</a> 
+       </h1>
 
         <nav class="navbar sticky-top navbar-expand-lg navbar navbar-dark bg-dark Menu animate__animated animate__lightSpeedInRight">
             <div class="container-fluid">
@@ -53,6 +55,7 @@
                 <form class="d-flex">
                   <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
                   <button class="btn btn-outline-success" type="submit"><img src="../images/lupa.png" alt="lupa" class="lupa"></button>
+                  <button class="btn btn-outline-success" type="submit"><img src="../images/Carrito.png" alt="carrito" class="carrito"></button>
                 </form>
               </div>
             </div>
@@ -179,6 +182,18 @@
                           </div>
                         </li>
 
+                        <li>
+                          <div class="card cardSize">
+                            <img src="../images/Luigi Mansion 3.jpg" class="card-img-top gamesImage" alt="Luigi's Mansion 3">
+                            <div class="card-body">
+                              <p class="card-text gamesList">Luigi's Mansion 3</p>
+                              <p class="card-text gamesList">Precio: $12.500</p>
+                              <p><button class="cardButton">Agregar al carrito</button></p>
+                            </div>
+                          </div>
+                          </div>
+                        </li>
+
                     </ol>
 
             </ol>
@@ -255,6 +270,17 @@
 <!-- finaliza el footer -->
     
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+   <script>
+
+    window.addEventListener("load", function(event) {
+    
+    document.getElementsByClassName("disclaimer")[0].remove();
+    
+    console.log("Eliminado!");
+    
+    });
+    
+    </script>
 
 </body>
 </html>

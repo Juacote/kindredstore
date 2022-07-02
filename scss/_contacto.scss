@@ -5,9 +5,12 @@
 }
 
 .sendBottom{
-    background-color: rgb(210, 210, 210);
-    color: black;
+    color: white;
+    background-color: black;
     border-color: black;
-    font-size: 20px;
+    font-size: 26px;
 }
 
+.sendBottom:hover{
+    opacity: 0.7;
+}

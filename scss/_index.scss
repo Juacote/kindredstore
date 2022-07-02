@@ -1,5 +1,6 @@
 body{
     background-color: $bgFondo;
+    overflow-x: hidden;
 }
 
 
@@ -10,6 +11,8 @@ header{
         font-style: normal;
         padding-left: 30px;
         padding-bottom: 20px;
+        color: black;
+        text-decoration: none;
         text-decoration: underline $bgUnderline;
     }
 
@@ -26,6 +29,15 @@ header{
     }
 }
 
+.firstTitle{
+    color: black;
+    text-decoration: underline $bgUnderline;
+}
+
+.firstTitle:hover{
+    color: black;
+}
+
 .slideIndex{
     max-width: 100%;
     max-height: 100%;
@@ -39,6 +51,10 @@ footer{
     padding-left: 20px;
     font-family: 'Bangers', cursive;
     margin: 8px 8px;
+}
+
+.carrito{
+    height: 28px;
 }
 
 .lupa{
@@ -121,7 +137,7 @@ footer{
     padding-right: 120px;
     padding-top: 20px;
     width: 800px;
-    max-width: 150%;
+    max-width: 100%;
     height: 360px;
     max-height: 100%;
 }
