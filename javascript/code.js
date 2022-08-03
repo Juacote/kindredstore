@@ -1,54 +1,98 @@
 //Arranca el listado de juegos
 
+class Producto {
+    constructor(nombre, consola, precio, cantidad) {
+        this.nombre = nombre.toUpperCase();
+        this.consola = consola;
+        this.precio = parseFloat(precio);
+        this.cantidad = cantidad;
+      }
+}
+
+const productos = []
 
 
-let=juego=prompt("Elige los juegos que quieras de nuestro stock y aprovecha estas increíbles ofertas \n\nPS4\n\nElden Ring (Precio $12000)\nHorizon Forbidden West (Precio $12000)\nResident Evil 8 Village (Precio $9000)\n\nPS5\n\nGran Turismo 7 (Precio $12300)\nDying Light 2 (Precio $12300)\n\nSWITCH\n\nPokemon Arceus (Precio $12000)\nMario Kart 8 Deluxe (Precio $12600)\nLuigi Mansion 3 (Precio $12600) \n\n(Introduzca la palabra -continuar- para seguir con la compra)")
+productos.push(new Producto("Elden Ring","PS4", 12000, 5));
+productos.push(new Producto("Horizon Forbidden West", "PS4", 12000, 5));
+productos.push(new Producto("Resident Evil 8 Village", "PS4", 9000, 2));
+productos.push(new Producto("Gran Turismo 7", "PS5", 12300, 3));
+productos.push(new Producto("Dying Light 2", "PS5", 12300, 3));
+productos.push(new Producto("Pokemon Arceus", "SWITCH", 12000, 3));
+productos.push(new Producto("Mario Kart 8 Deluxe", "SWITCH", 12600, 3));
+productos.push(new Producto("Luigi Mansion 3", "SWITCH", 12600, 3));
+
+
+let juego=prompt("Bienvenido a Kindred Store, el mejor sitio de venta de videojuegos ¿Quiere ver nuestro catálogo? (ingrese el número)\n\n1)Si\n2)Salir".toUpperCase())
 let precio=0;
 
-
-while(juego!="continuar"){
-    switch(juego){
-        case "Elden Ring":
-            console.log("Excelente elección el Elden Ring. ¿querés algo más?");
-            precio=precio+12000;
-            break;
-        case "Horizon Forbidden West":
-            console.log("Excelente elección el Horizon Forbidden West. ¿querés algo más?");
-            precio=precio+12000;
-            break;
-        case "Resident Evil 8 Village":
-            console.log("Excelente elección el Resident Evil 8 Village. ¿querés algo más?");
-            precio=precio+9000;
-            break;            
-        case "Gran Turismo 7":
-            console.log("Excelente elección el Gran Turismo 7. ¿querés algo más?");
-            precio=precio+12300;
-            break;
-        case "Dying Light 2":
-            console.log("Excelente elección el Dying Light 2. ¿querés algo más?");
-            precio=precio+12300;
-        case "Pokemon Arceus":
-            console.log("Excelente elección el Pokemon Arceus. ¿querés algo más?");
-            precio=precio+12000;
-            break;            
-        case "Mario Kart 8 Deluxe":
-            console.log("Excelente elección el Mario Kart 8 Deluxe. ¿querés algo más?");
-            precio=precio+12600;
-            break;
-        case "Luigi Mansion 3":
-            console.log("Excelente elección el Luigi Mansion 3. ¿querés algo más?");
-            precio=precio+12600;            
-            break;            
-        default:
-            console.log("por el momento no contamos con ese juego :/");
-            break;
+if(juego == "1"){
+    alert("!Perfecto, ahí vamos!".toUpperCase())
+    console.table(productos)
+    videoJuegos()
+}else if(juego == "2"){
+        alert("que lastima...");
+    }else{
+        alert("No es valido el número ingresado, vuelva a intentar");
+        juego=prompt("Bienvenido a Kindred Store, el mejor sitio de venta de videojuegos ¿Quiere ver nuestro catálogo? (ingrese el número)\n\n1)Si\n2)Salir".toUpperCase())
     }
-    juego=prompt("Elige los juegos que quieras de nuestro stock y aprovecha estas increíbles ofertas \n\nPS4\n\nElden Ring (Precio $12000)\nHorizon Forbidden West (Precio $12000)\nResident Evil 8 Village (Precio $9000)\n\nPS5\n\nGran Turismo 7 (Precio $12300)\nDying Light 2 (Precio $12300)\n\nSWITCH\n\nPokemon Arceus (Precio $12000)\nMario Kart 8 Deluxe (Precio $12600)\nLuigi Mansion 3 (Precio $12600) \n\n(Introduzca la palabra -continuar- para seguir con la compra)")
-}
+//Finaliza el listado de juegos
+ 
+//Arranca venta de juegos 
+
+
+function videoJuegos()    
+    
+{   
+    let videoJuego=prompt("Del menú que se ha desplegado, ingresa el nombre del juego que deseas agregar a tu carrito. \n(Introduzca la palabra -continuar- para seguir con la compra)".toUpperCase())    
+
+    while(videoJuego!="CONTINUAR"){
+        switch(videoJuego){
+            case "ELDEN RING":
+                console.log("Excelente elección el Elden Ring. ¿querés algo más?");
+                precio=precio+12000;
+                break;
+            case "HORIZON FORBIDDEN WEST":
+                console.log("Excelente elección el Horizon Forbidden West. ¿querés algo más?");
+                precio=precio+12000;
+                break;
+            case "RESIDENT EVIL 8 VILLAGE":
+                console.log("Excelente elección el Resident Evil 8 Village. ¿querés algo más?");
+                precio=precio+9000;
+                break;            
+            case "GRAN TURISMO 7":
+                console.log("Excelente elección el Gran Turismo 7. ¿querés algo más?");
+                precio=precio+12300;
+                break;
+            case "DYING LIGHT 2":
+                console.log("Excelente elección el Dying Light 2. ¿querés algo más?");
+                precio=precio+12300;
+            case "POKEMON ARCEUS":
+                console.log("Excelente elección el Pokemon Arceus. ¿querés algo más?");
+                precio=precio+12000;
+                break;            
+            case "MARIO KART 8 DELUXE":
+                console.log("Excelente elección el Mario Kart 8 Deluxe. ¿querés algo más?");
+                precio=precio+12600;
+                break;
+            case "LUIGI MANSION 3":
+                console.log("Excelente elección el Luigi Mansion 3. ¿querés algo más?");
+                precio=precio+12600;            
+                break;            
+            default:
+                console.log("por el momento no contamos con ese juego :/");
+                break;
+        }
+        videoJuego=prompt("Del menú que se ha desplegado, ingresa el nombre del juego que deseas agregar a tu carrito. (Introduzca la palabra -continuar- para seguir con la compra)".toUpperCase())
+    }
+
+}    
 
 console.log("Total a pagar $"+precio)
 
-//Finaliza el listado de juegos
+
+//Finaliza venta de juegos 
+
+
 
 //arranca los métodos de pago
 
@@ -56,7 +100,7 @@ console.log("Total a pagar $"+precio)
 function MostrarMetodosPago()
 
 {
-    let=metodoPago=prompt("Elige el método de Pago ingresando el número.\n\n1) Tarjeta de Crédito (3 cuotas sin interes o 6 con un recargo del 10%)\n2) Tarjeta de Débito (3 cuotas sin interes o 6 con un recargo del 15%)\n3) Mercado Pago (3 cuotas con recargo del 10% o 6 con un recargo del 15%)\n4) Cancelar Compra");
+    let metodoPago=prompt("Elige el método de Pago ingresando el número.\n\n1) Tarjeta de Crédito (3 cuotas sin interes o 6 con un recargo del 10%)\n2) Tarjeta de Débito (3 cuotas sin interes o 6 con un recargo del 15%)\n3) Mercado Pago (3 cuotas con recargo del 10% o 6 con un recargo del 15%)\n4) Cancelar Compra".toUpperCase());
 
     if (metodoPago == "1"){
         tarjetaCrédito()
@@ -65,9 +109,9 @@ function MostrarMetodosPago()
     }else if(metodoPago == "3"){
         mercadoPago()
     }else if(metodoPago == "4"){
-        alert("Que pena que hayas cancelado la compra...");    
+        alert("Que pena que hayas cancelado la compra...".toUpperCase());    
     }else{
-        alert("No es valido el número ingresado, vuelva a intentar");
+        alert("No es valido el número ingresado, vuelva a intentar".toUpperCase());
         MostrarMetodosPago()
     }
 }
@@ -81,47 +125,46 @@ MostrarMetodosPago()
 
 function tarjetaCrédito()
 {
-    let=cantidadCuotas=prompt("Elige la cantidad de cuotas ingresando el número.\n\n1) 3 cuotas\n2) 6 cuotas (Con recargo del 10%)");
+    let cantidadCuotas=prompt("Elige la cantidad de cuotas ingresando el número.\n\n1) 3 cuotas\n2) 6 cuotas (Con recargo del 10%)".toUpperCase());
     if (cantidadCuotas == 1){
         let totalSinRecargo = precio / 3;
-        alert("Perfecto, Cada cuota sera de $"+totalSinRecargo+". Ya seras redireccionado para finalizar la compra.");
+        alert("Perfecto, Cada cuota sera de $"+totalSinRecargo+". Ya seras redireccionado para finalizar la compra.".toUpperCase());
     }else if(cantidadCuotas == 2){
         let totalconRecargo = (precio / 6) * 1.10;
-        alert("Perfecto, Cada cuota sera de $"+totalconRecargo+". Ya seras redireccionado para finalizar la compra.");
+        alert("Perfecto, Cada cuota sera de $"+totalconRecargo+". Ya seras redireccionado para finalizar la compra.".toUpperCase());
     }else{
-        alert("No es valido el número ingresado, vuelva a intentar");
+        alert("No es valido el número ingresado, vuelva a intentar".toUpperCase());
         tarjetaCrédito()
     }
 }
 
 function tarjetaDébito()
 {
-    let=cantidadCuotas=prompt("Elige la cantidad de cuotas ingresando el número.\n\n1) 3 cuotas\n2) 6 cuotas (Con recargo del 15%)");
+    let cantidadCuotas=prompt("Elige la cantidad de cuotas ingresando el número.\n\n1) 3 cuotas\n2) 6 cuotas (Con recargo del 15%)".toUpperCase());
     if (cantidadCuotas == 1){
         let totalSinRecargo = precio / 3;
-        alert("Perfecto, Cada cuota sera de $"+totalSinRecargo+". Ya seras redireccionado para finalizar la compra.");
+        alert("Perfecto, Cada cuota sera de $"+totalSinRecargo+". Ya seras redireccionado para finalizar la compra.".toUpperCase());
     }else if(cantidadCuotas == 2){
         let totalconRecargo = (precio / 6) * 1.15;
-        alert("Perfecto, Cada cuota sera de $"+totalconRecargo+". Ya seras redireccionado para finalizar la compra.");
+        alert("Perfecto, Cada cuota sera de $"+totalconRecargo+". Ya seras redireccionado para finalizar la compra.".toUpperCase());
     }else{
-        alert("No es valido el número ingresado, vuelva a intentar");
-        tarjetaDédito()
+        alert("No es valido el número ingresado, vuelva a intentar".toUpperCase());
+        tarjetaDébito()
     }
 }
 
 function mercadoPago()
 {
-    let=cantidadCuotas=prompt("Elige la cantidad de cuotas ingresando el número.\n\n1) 3 cuotas (Con recargo del 10%)\n2) 6 cuotas (Con recargo del 15%)");
+    let cantidadCuotas=prompt("Elige la cantidad de cuotas ingresando el número.\n\n1) 3 cuotas (Con recargo del 10%)\n2) 6 cuotas (Con recargo del 15%)".toUpperCase());
     if (cantidadCuotas == 1){
         let totalSinRecargo = (precio / 3) * 1.10;
-        alert("Perfecto, Cada cuota sera de $"+totalSinRecargo+". Ya seras redireccionado para finalizar la compra.");
+        alert("Perfecto, Cada cuota sera de $"+totalSinRecargo+". Ya seras redireccionado para finalizar la compra.".toUpperCase());
     }else if(cantidadCuotas == 2){
         let totalconRecargo = (precio / 6) * 1.15;
-        alert("Perfecto, Cada cuota sera de $"+totalconRecargo+". Ya seras redireccionado para finalizar la compra.");
+        alert("Perfecto, Cada cuota sera de $"+totalconRecargo+". Ya seras redireccionado para finalizar la compra.".toUpperCase());
     }else{
-        alert("No es valido el número ingresado, vuelva a intentar");
+        alert("No es valido el número ingresado, vuelva a intentar".toUpperCase());
         mercadoPago()
     }
 }
 
-//finaliza las funciones de métodos de pago
