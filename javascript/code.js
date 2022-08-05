@@ -14,27 +14,50 @@ const productos = []
 
 productos.push(new Producto("Elden Ring","PS4", 12000, 5));
 productos.push(new Producto("Horizon Forbidden West", "PS4", 12000, 5));
-productos.push(new Producto("Resident Evil 8 Village", "PS4", 9000, 2));
-productos.push(new Producto("Gran Turismo 7", "PS5", 12300, 3));
-productos.push(new Producto("Dying Light 2", "PS5", 12300, 3));
-productos.push(new Producto("Pokemon Arceus", "SWITCH", 12000, 3));
-productos.push(new Producto("Mario Kart 8 Deluxe", "SWITCH", 12600, 3));
-productos.push(new Producto("Luigi Mansion 3", "SWITCH", 12600, 3));
+productos.push(new Producto("Resident Evil 8 Village", "PS4", 9000, 5));
+productos.push(new Producto("Gran Turismo 7", "PS5", 11500, 3));
+productos.push(new Producto("Dying Light 2", "PS5", 11000, 3));
+productos.push(new Producto("Hogwarts Legacy", "PS5", 12000, 3));
+productos.push(new Producto("Pokemon Arceus", "SWITCH", 13000, 4));
+productos.push(new Producto("Mario Kart 8 Deluxe", "SWITCH", 12000, 4));
+productos.push(new Producto("Luigi Mansion 3", "SWITCH", 12600, 4));
+
+productos.sort((a,b) =>a.precio - b.precio);
 
 
-let juego=prompt("Bienvenido a Kindred Store, el mejor sitio de venta de videojuegos ¿Quiere ver nuestro catálogo? (ingrese el número)\n\n1)Si\n2)Salir".toUpperCase())
+let juego=prompt("Bienvenido a Kindred Store, el mejor sitio de venta de videojuegos ¿Quiere ver nuestro catálogo? ¡Ingresa la consola y descubri que juegos tenemos para cada una de ellas! (si desea salir de la página o simplemente cancelar la compra escriba -salir-) \n\nPS4\nPS5\nSWITCH\n\nSALIR".toUpperCase());
 let precio=0;
+listadoJuegos()
 
-if(juego == "1"){
-    alert("!Perfecto, ahí vamos!".toUpperCase())
-    console.table(productos)
+
+function listadoJuegos()
+
+{
+
+if(juego == "PS4"){
+    alert("!Perfecto, ahí vamos!".toUpperCase());
+    const PS4=productos.filter((consolas)=>consolas.consola.includes("PS4"));
+    console.table(PS4)
     videoJuegos()
-}else if(juego == "2"){
-        alert("que lastima...");
-    }else{
-        alert("No es valido el número ingresado, vuelva a intentar");
-        juego=prompt("Bienvenido a Kindred Store, el mejor sitio de venta de videojuegos ¿Quiere ver nuestro catálogo? (ingrese el número)\n\n1)Si\n2)Salir".toUpperCase())
-    }
+    }else if(juego == "PS5"){
+        alert("!Perfecto, ahí vamos!".toUpperCase());
+        const PS5=productos.filter((consolas)=>consolas.consola.includes("PS5"));
+        console.table(PS5)
+        videoJuegos()
+    }else if(juego == "SWITCH"){
+        alert("!Perfecto, ahí vamos!".toUpperCase());
+        const SWITCH=productos.filter((consolas)=>consolas.consola.includes("SWITCH"));
+        console.table(SWITCH)
+        videoJuegos()
+    }else if(juego == "SALIR"){
+            alert("que lástima...".toUpperCase());    
+        }else{
+            alert("No contamos con esa consola.".toUpperCase());
+            juego=prompt("Bienvenido a Kindred Store, el mejor sitio de venta de videojuegos ¿Quiere ver nuestro catálogo? ¡Ingresa la consola y descubri que juegos tenemos para cada una de ellas! (si desea salir de la página o simplemente cancelar la compra escriba -salir-) \n\nPS4\nPS5\nSWITCH\n\nSALIR ".toUpperCase());
+        }
+
+} 
+    
 //Finaliza el listado de juegos
  
 //Arranca venta de juegos 
@@ -43,12 +66,12 @@ if(juego == "1"){
 function videoJuegos()    
     
 {   
-    let videoJuego=prompt("Del menú que se ha desplegado, ingresa el nombre del juego que deseas agregar a tu carrito. \n(Introduzca la palabra -continuar- para seguir con la compra)".toUpperCase())    
+    let videoJuego=prompt("Del menú que se ha desplegado, ingresa el nombre del juego que deseas agregar a tu carrito. \n(Introduzca la palabra -continuar- para seguir con la compra y -volver- si quiere ver las consolas de nuevo o cancelar la compra)".toUpperCase())    
 
     while(videoJuego!="CONTINUAR"){
         switch(videoJuego){
             case "ELDEN RING":
-                console.log("Excelente elección el Elden Ring. ¿querés algo más?");
+                console.log("Excelente elección el Elden Ring. ¿querés algo más?".toUpperCase());
                 precio=precio+12000;
                 break;
             case "HORIZON FORBIDDEN WEST":
@@ -61,28 +84,37 @@ function videoJuegos()
                 break;            
             case "GRAN TURISMO 7":
                 console.log("Excelente elección el Gran Turismo 7. ¿querés algo más?");
-                precio=precio+12300;
+                precio=precio+11500;
                 break;
             case "DYING LIGHT 2":
                 console.log("Excelente elección el Dying Light 2. ¿querés algo más?");
-                precio=precio+12300;
+                precio=precio+11000;
+            case "HOGWARTS LEGACY":
+                console.log("Excelente elección el Hogwarts Legacy. ¿querés algo más?");
+                precio=precio+12000;
+                break;    
             case "POKEMON ARCEUS":
                 console.log("Excelente elección el Pokemon Arceus. ¿querés algo más?");
-                precio=precio+12000;
+                precio=precio+13000;
                 break;            
             case "MARIO KART 8 DELUXE":
                 console.log("Excelente elección el Mario Kart 8 Deluxe. ¿querés algo más?");
-                precio=precio+12600;
+                precio=precio+12000;
                 break;
             case "LUIGI MANSION 3":
                 console.log("Excelente elección el Luigi Mansion 3. ¿querés algo más?");
                 precio=precio+12600;            
-                break;            
+                break;
+            case "VOLVER":
+                juego=prompt("Bienvenido a Kindred Store, el mejor sitio de venta de videojuegos ¿Quiere ver nuestro catálogo? ¡Ingresa la consola y descubri que juegos tenemos para cada una de ellas! (si desea salir de la página o simplemente cancelar la compra escriba -salir-) \n\nPS4\nPS5\nSWITCH\n\nSALIR".toUpperCase());
+                listadoJuegos()
+                break;
             default:
                 console.log("por el momento no contamos con ese juego :/");
                 break;
         }
-        videoJuego=prompt("Del menú que se ha desplegado, ingresa el nombre del juego que deseas agregar a tu carrito. (Introduzca la palabra -continuar- para seguir con la compra)".toUpperCase())
+        videoJuego=prompt("Del menú que se ha desplegado, ingresa el nombre del juego que deseas agregar a tu carrito. \n(Introduzca la palabra -continuar- para seguir con la compra y -volver- si quiere ver las consolas de nuevo o cancelar la compra)".toUpperCase())    
+
     }
 
 }    
