@@ -44,6 +44,7 @@ let GameCards=document.getElementById("PS4");
 
 }
 
+addCart();
 
 function addCart(product){
     let buttonCard = document.getElementById(`btn${games.name}`)
@@ -51,11 +52,9 @@ function addCart(product){
         let cartElements = new CartElement(product, 1);
         cart.push(cartElements);
         localStorage.setItem("cart",JSON.stringify(cart));
+        alert("Agregaste "+games.name+" al Carrito.")
 }
-
 }
-
-
 
 
 // ps4.forEach(games =>{
