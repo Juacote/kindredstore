@@ -73,7 +73,7 @@
 
 
 <div class="modal fade" id="htmlCart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-lg">
       <div class="modal-content">
           <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Carrito</h5>
@@ -81,18 +81,19 @@
           </div>
           <div class="modal-body">
               <div class="container">
-                  <table class="table">
-                      <thead>
+                  <table class="table table-sm">
+                      <thead class="table-dark" >
                           <tr>
-                          <th scope="col">Nombre</th>
-                          <th scope="col">Cantidad</th>
-                          <th scope="col">Precio</th>
-                          <th scope="col">Total</th>
+                            <th scope="col">Imagen</th>  
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Total</th>
                           </tr>
                       </thead>
                       <tbody id="items"></tbody>
                       <tfoot>
-                          <tr id="footer">
+                          <tr id="footer" >
                           <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
                           </tr>
                       </tfoot>
@@ -102,8 +103,8 @@
           
           </div>
           <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary">Terminar compra</button>
+          <button type="submit" id="emptyCart" class="btn btn-outline-danger btn-lg">Vaciar el Carrito</button>
+          <button type="submit" href="" class="btn btn-outline-dark btn-lg">Terminar Compra</button>
           </div>
       </div>
   </div>
