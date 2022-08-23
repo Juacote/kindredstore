@@ -55,7 +55,7 @@
                 <form class="d-flex">
                   <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
                   <button class="btn btn-outline-success" type="submit"><img src="../images/lupa.png" alt="lupa" class="lupa"></button>
-                  <button class="btn btn-outline-success" type="submit"><img src="../images/Carrito.png" alt="carrito" class="carrito"></button>
+                  <button class="btn btn-outline-success" type="button"><img src="../images/Carrito.png" alt="carrito" class="carrito" data-bs-toggle="modal" data-bs-target="#htmlCart"> <i class="bi bi-bag-check-fill"></i></button>
                 </form>
               </div>
             </div>
@@ -65,6 +65,50 @@
 
 <!-- finaliza el header -->     
     
+<!-- comienza el carrito-->
+
+
+<div class="modal fade" id="htmlCart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Carrito</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <div class="container">
+                  <table class="table table-sm">
+                      <thead class="table-dark" >
+                          <tr>
+                            <th scope="col">Imagen</th>  
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Total</th>
+                          </tr>
+                      </thead>
+                      <tbody id="items"></tbody>
+                      <tfoot>
+                          <tr id="footer" >
+                          <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+                          </tr>
+                      </tfoot>
+                      </table>
+                  <div class="row" id="cards"></div>
+              </div>
+          
+          </div>
+          <div class="modal-footer">
+          <button type="submit" id="emptyCart" class="btn btn-outline-danger btn-lg">Vaciar el Carrito</button>
+          <button type="submit" href="" class="btn btn-outline-dark btn-lg">Terminar Compra</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<!-- finaliza el carrito-->
+
     <div class="principalImage animate__animated animate__lightSpeedInRight">
         <img src="../images/Kindred.jpg" alt="Kindred" class="kindredImage">
     </div>
@@ -193,7 +237,8 @@
 <!-- finaliza el footer -->
    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-      
-      </script>
+    <script src="../javascript/cart.js"></script>
+    
+    
 </body>
 </html>
