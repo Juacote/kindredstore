@@ -62,20 +62,66 @@ function createCart() {
 
 function emptyCart(){
     document.getElementById("emptyCart").addEventListener("click", function(){
-        cart = []
-        localStorage.setItem("cart",JSON.stringify(cart));
-        alert("Vaciaste el carrito... Esperamos volver a verte!")
+        // localStorage.setItem("cart",JSON.stringify(cart));
+        const swalWithBootstrapButtons = Swal.mixin({
+            customClass: {
+              confirmButton: 'btn btn-outline-dark btn-lg',
+              cancelButton: 'btn btn-outline-danger btn-lg'
+            },
+            buttonsStyling: false
+          })
+          
+          swalWithBootstrapButtons.fire({
+            title: '¿Estás seguro?',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonText: '¡Si, quiero borrarlo!',
+            cancelButtonText: '¡No, me arrepenti!',
+            reverseButtons: true
+          }).then((result) => {
+            if (result.isConfirmed) {
+                cart = []
+                localStorage.setItem("cart",JSON.stringify(cart));
+                createCart()
+              swalWithBootstrapButtons.fire(
+                '¡Borrado!',
+                'Que Lástima...',
+                'success'
+              )
+            } else if (
+              result.dismiss === Swal.DismissReason.cancel
+            ) {
+              swalWithBootstrapButtons.fire(
+                '¡Cancelado!',
+                '¡Tu carrito se encuentra a salvo!',
+                'error'
+              )
+            }
+          })
         createCart()
     });
 }
 
 emptyCart()
 
+function checkout(){
+    document.getElementById("checkout").addEventListener("click", function(){
+        cart = []
+        localStorage.setItem("cart",JSON.stringify(cart));
+        createCart()
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: '¡Felicidades, ya seras redireccionado al formulario de pago!',
+            showConfirmButton: false,
+            timer: 3500
+          })
+})}
 
-//inicia el OR
+checkout()
+
+
 
 cart = JSON.parse(localStorage.getItem('cart')) || []
 createCart(cart)
 console.table(cart)
-
-//finaliza el or

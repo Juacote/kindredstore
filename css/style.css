@@ -367,6 +367,12 @@ ul {
   justify-content: center;
 }
 
+.customToast {
+  font-weight: bolder;
+  font-size: 28px;
+  text-align: center;
+}
+
 @media screen and (max-width: 480px) {
   .consoleFlex {
     display: flex;

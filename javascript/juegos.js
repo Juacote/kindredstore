@@ -35,8 +35,21 @@ let GameCards=document.getElementById("PS4");
                 localStorage.setItem("cart",JSON.stringify(cart));
                 //inicia el desestructurador de objeto
                 let {name,price} = games
-                alert("Agregaste "+name+" al Carrito.")
-                console.table(name,"$"+price)
+                Toastify({
+                    text: "Agregaste "+name+" a tu Carrito.",
+                    position: "center",
+                    className: "customToast",
+                    showIcon: 'true',
+                    offset: {
+                        y: 400, 
+                      },
+                    duration: 2000,
+                    style: {
+                        background: "linear-gradient(to left, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55)",
+                    }
+                  }).showToast();
+                // Swal.fire("Agregaste "+name+" al Carrito.")
+                // console.table(name,"$"+price)
                  //finaliza el desestructurador de objeto
                 createCart()
         }
@@ -78,7 +91,19 @@ for(const games of ps5){
             localStorage.setItem("cart",JSON.stringify(cart));
                 //inicia el desestructurador de objeto
                 let {name,price} = games
-                alert("Agregaste "+name+" al Carrito.")
+                Toastify({
+                    text: "Agregaste "+name+" a tu Carrito.",
+                    position: "center",
+                    className: "customToast",
+                    showIcon: 'true',
+                    offset: {
+                        y: 400, 
+                      },
+                    duration: 2000,
+                    style: {
+                        background: "linear-gradient(to left, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55)",
+                    }
+                  }).showToast();
                 console.table(name,"$"+price)
                  //finaliza el desestructurador de objeto
             createCart()
@@ -118,7 +143,19 @@ for(const games of SWITCH){
             localStorage.setItem("cart",JSON.stringify(cart));
                 //inicia el desestructurador de objeto
                 let {name,price} = games
-                alert("Agregaste "+name+" al Carrito.")
+                Toastify({
+                    text: "Agregaste "+name+" a tu Carrito.",
+                    position: "center",
+                    className: "customToast",
+                    showIcon: 'true',
+                    offset: {
+                        y: 400, 
+                      },
+                    duration: 1500,
+                    style: {
+                        background: "linear-gradient(to left, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55)",
+                    }
+                  }).showToast();
                 console.table(name,"$"+price)
                  //finaliza el desestructurador de objeto
             createCart()
