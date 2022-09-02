@@ -313,6 +313,7 @@ ul {
 .cardSize {
   transition: transform 0.2s;
   height: 440px;
+  margin: 12px;
   outline: none;
   box-sizing: border-box;
   width: 240px;
@@ -371,6 +372,17 @@ ul {
   font-weight: bolder;
   font-size: 28px;
   text-align: center;
+}
+
+.organizeFilter {
+  padding-left: 40px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.filter {
+  padding-left: 12px;
 }
 
 @media screen and (max-width: 480px) {

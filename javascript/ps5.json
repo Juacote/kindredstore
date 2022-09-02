@@ -1,0 +1,75 @@
+[
+
+    {
+        "id": "1",
+        "console": "ps5",
+        "category": "games",
+        "name": "Gran Turismo 7",
+        "image": "../images/GranTurismo.jpg",
+        "price": "11500"
+    },
+
+    {
+        "id": "2",
+        "console": "ps5",
+        "category": "games",
+        "name": "Dying Light 2",
+        "image": "../images/DyingLight2.jpg",
+        "price": "11000"
+    },
+
+    {
+        "id": "3",
+        "console": "ps5",
+        "category": "games",
+        "name": "Hogwarts Legacy",
+        "image": "../images/HarryPotter.jpg",
+        "price": "12000"
+    },
+
+    {
+        "id": "4",
+        "console": "ps5",
+        "category": "accsesory",
+        "name": "Joystick DualSense",
+        "image": "../images/JoystickPS5.jpg",
+        "price": "14500"
+    },
+
+    {
+        "id": "5",
+        "console": "ps5",
+        "category": "accsesory",
+        "name": "Joystick inalambrico Dualsense Negro",
+        "image": "../images/JoystickPS52.jpg",
+        "price": "15500"
+    },
+
+    {
+        "id": "6",
+        "console": "ps5",
+        "category": "accsesory",
+        "name": "Joystick PS5 DualSense Rojo Cósmico",
+        "image": "../images/JoystickPS5Rojo.jpg",
+        "price": "14500"
+    },
+
+    {
+        "id": "7",
+        "console": "ps5",
+        "category": "console",
+        "name": "Sony PS5 Standard",
+        "image": "../images/PS5.jpg",
+        "price": "180000"
+    },
+
+    {
+        "id": "8",
+        "console": "ps5",
+        "category": "console",
+        "name": "Sony PS5 Consola 825 Gb Version Digital",
+        "image": "../images/Ps5Digital.jpg",
+        "price": "180000"
+    }
+    
+]
