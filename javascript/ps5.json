@@ -30,6 +30,16 @@
     {
         "id": "4",
         "console": "ps5",
+        "category": "games",
+        "name": "Returnal",
+        "image": "../images/Returnal.jpg",
+        "price": "15000"
+    },
+
+
+    {
+        "id": "5",
+        "console": "ps5",
         "category": "accsesory",
         "name": "Joystick DualSense",
         "image": "../images/JoystickPS5.jpg",
@@ -37,7 +47,7 @@
     },
 
     {
-        "id": "5",
+        "id": "6",
         "console": "ps5",
         "category": "accsesory",
         "name": "Joystick inalambrico Dualsense Negro",
@@ -46,7 +56,7 @@
     },
 
     {
-        "id": "6",
+        "id": "7",
         "console": "ps5",
         "category": "accsesory",
         "name": "Joystick PS5 DualSense Rojo Cósmico",
@@ -55,7 +65,7 @@
     },
 
     {
-        "id": "7",
+        "id": "8",
         "console": "ps5",
         "category": "console",
         "name": "Sony PS5 Standard",
@@ -64,7 +74,7 @@
     },
 
     {
-        "id": "8",
+        "id": "9",
         "console": "ps5",
         "category": "console",
         "name": "Sony PS5 Consola 825 Gb Version Digital",

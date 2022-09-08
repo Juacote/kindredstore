@@ -1,0 +1,84 @@
+[
+
+    {
+        "id": "1",
+        "console": "ps4",
+        "category": "games",
+        "name": "Horizon Forbidden West",
+        "image": "../images/Horizon.jpg",
+        "price": "10500"
+    },
+
+    {
+        "id": "2",
+        "console": "ps4",
+        "category": "games",
+        "name": "Elden Ring",
+        "image": "../images/EldenRing.jpg",
+        "price": "11000"
+    },
+
+    {
+        "id": "3",
+        "console": "ps4",
+        "category": "games",
+        "name": "Resident Evil Village",
+        "image": "../images/Re8.jpg",
+        "price": "12000"
+    },
+
+    {
+        "id": "4",
+        "console": "ps4",
+        "category": "games",
+        "name": "Nier Replicant Ver 1.22474487139",
+        "image": "../images/Nier.jpg",
+        "price": "13000"
+    },
+
+    {
+        "id": "5",
+        "console": "ps4",
+        "category": "accsesory",
+        "name": "Joystick Sony Dualshock 4 Midnight Blue",
+        "image": "../images/JoystickPS4Azul.jpg",
+        "price": "15500"
+    },
+
+    {
+        "id": "6",
+        "console": "ps4",
+        "category": "accsesory",
+        "name": "Joystick Inalambrico Sony Dualshock 4 Negro",
+        "image": "../images/JoystickPS52.jpg",
+        "price": "13500"
+    },
+
+    {
+        "id": "7",
+        "console": "ps4",
+        "category": "accsesory",
+        "name": "Camara Sony CUH-ZEY1 N",
+        "image": "../images/CamaraPS4.jpg",
+        "price": "23400"
+    },
+
+    {
+        "id": "8",
+        "console": "ps4",
+        "category": "console",
+        "name": "Sony PS4 Slim 1TB",
+        "image": "../images/PS4.jpg",
+        "price": "115000"
+    },
+
+    {
+        "id": "9",
+        "console": "ps5",
+        "category": "console",
+        "name": "PS4 1 Tb Slim Mega Pack con Juegos + Ps Plus",
+        "image": "../images/PS4Combo.jpg",
+        "price": "135000"
+    }
+    
+]

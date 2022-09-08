@@ -1,0 +1,86 @@
+[
+
+    {
+        "id": "1",
+        "console": "Switch",
+        "category": "games",
+        "name": "Luigi Mansion 3",
+        "image": "../images/LuigiMansion3.jpg",
+        "price": "13500"
+    },
+
+    {
+        "id": "2",
+        "console": "Switch",
+        "category": "games",
+        "name": "Pokemon Arceus",
+        "image": "../images/PokemonArceus.jpg",
+        "price": "12000"
+    },
+
+    {
+        "id": "3",
+        "console": "Switch",
+        "category": "games",
+        "name": "Mario Kart 8 Deluxe",
+        "image": "../images/SuperMario.jpg",
+        "price": "14000"
+    },
+
+    {
+        "id": "4",
+        "console": "Switch",
+        "category": "games",
+        "name": "Mario Party Superstars",
+        "image": "../images/MarioParty.jpg",
+        "price": "16000"
+    },
+
+    {
+        "id": "5",
+        "console": "Switch",
+        "category": "accsesory",
+        "name": "Pack de Joycon R-L Gris",
+        "image": "../images/JoystickPS52.jpg",
+        "price": "17500"
+    },
+
+    {
+        "id": "6",
+        "console": "Switch",
+        "category": "accsesory",
+        "name": "Nintendo Switch Pro Controller Negro",
+        "image": "../images/JoystickSwitch.jpg",
+        "price": "15000"
+    },
+
+    {
+        "id": "7",
+        "console": "Switch",
+        "category": "accsesory",
+        "name": "Pack de Joycon R-L Gris",
+        "image": "../images/Joycon.jpg",
+        "price": "17500"
+    },
+
+    {
+        "id": "8",
+        "console": "Switch",
+        "category": "console",
+        "name": "Nintendo Switch Neon",
+        "image": "../images/Switchh.jpg",
+        "price": "80000"
+    },
+
+    {
+        "id": "9",
+        "console": "Switch",
+        "category": "console",
+        "name": "Nintendo Switch Lite Blue",
+        "image": "../images/SwitchLiteAzul.jpg",
+        "price": "60000"
+    }
+
+
+    
+]
