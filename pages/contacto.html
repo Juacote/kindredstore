@@ -49,11 +49,6 @@
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../pages/consolas.html">Consolas</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../pages/accesorios.html">Accesorios</a>
-                  </li>
                   <li class="nav-item">
                     <a class="nav-link">Contacto</a>
                   </li>
@@ -61,7 +56,7 @@
                 <form class="d-flex">
                   <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
                   <button class="btn btn-outline-success" type="submit"><img src="../images/lupa.png" alt="lupa" class="lupa"></button>
-                  <button class="btn btn-outline-success" type="button"><img src="../images/Carrito.png" alt="carrito" class="carrito" data-bs-toggle="modal" data-bs-target="#htmlCart"> <i class="bi bi-bag-check-fill"></i></button>
+                  <button class="btn btn-outline-success" type="button"><img src="../images/Carrito.png" alt="carrito" class="carrito" data-bs-toggle="modal" data-bs-target="#htmlCart"> <span id="CartNumber">0</span></button>
                 </form>
               </div>
             </div>
@@ -91,6 +86,7 @@
                             <th scope="col">Cantidad</th>
                             <th scope="col">Precio</th>
                             <th scope="col">Total</th>
+                            <th scope="col"></th>
                           </tr>
                       </thead>
                       <tbody id="items"></tbody>
@@ -106,7 +102,7 @@
           </div>
           <div class="modal-footer">
           <button type="submit" id="emptyCart" class="btn btn-outline-danger btn-lg">Vaciar el Carrito</button>
-          <button type="submit" id="checkout" class="btn btn-outline-dark btn-lg">Terminar Compra</button>
+          <button type="submit" id="checkout" href="" class="btn btn-outline-dark btn-lg">Terminar Compra</button> 
           </div>
       </div>
   </div>

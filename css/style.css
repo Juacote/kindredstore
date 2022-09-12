@@ -439,6 +439,60 @@ ul {
   opacity: 0.7;
 }
 
+.yourData {
+  padding: 0px 80px 0 80px;
+  margin: 5000px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.yourOrder {
+  padding: 0px 80px 0 80px;
+  margin: 5000px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.formulario__grupo-correcto .formulario__validacion-estado {
+  color: #1ed12d;
+  opacity: 1;
+}
+
+.form__group-incorrect .formulario__label {
+  color: #bb2929;
+}
+
+.form__group-incorrect .formulario__validacion-estado {
+  color: #bb2929;
+  opacity: 1;
+}
+
+.form__group-incorrect .form__input {
+  border: 3px solid #bb2929;
+}
+
+.formulario__input-error-activo {
+  display: block;
+}
+
+.formulario__input-error {
+  font-size: 12px;
+  margin-bottom: 0;
+  display: none;
+}
+
+.formulario__mensaje-exito {
+  font-size: 14px;
+  color: #119200;
+  display: none;
+}
+
+.formulario__mensaje-exito-activo {
+  display: block;
+}
+
 body {
   background-color: rgb(223, 223, 223);
   overflow-x: hidden;
