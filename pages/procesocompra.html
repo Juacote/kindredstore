@@ -37,7 +37,7 @@
                     <a class="nav-link" href="../index.html">Inicio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link">Novedades</a>
+                    <a class="nav-link" href="../pages/novedades.html">Novedades</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -123,10 +123,12 @@
             <div class="col-12 col-sm-6 mb-3" id="group__name">
               <label for="nombre">Nombre</label>
               <input type="text" class="form-control form__input" id="name" name="name" required placeholder="">
+              <p class="psinerror">No admite números ni caracteres especiales</p>
             </div>
             <div class="col-12 col-sm-6 mb-3" id="group__surname">
               <label for="Telefono">Apellido</label>
               <input type="text" class="form-control form__input" id="surname" name="surname" required placeholder="">
+              <p class="psinerror">No admite números ni caracteres especiales</p>
             </div>
           </div>
            
@@ -134,10 +136,12 @@
             <div class="col-12 col-sm-6 mb-3" id="group__phone">
               <label for="nombre">Teléfono</label>
               <input type="text" class="form-control form__input" id="phone" name="phone" required placeholder="">
+              <p class="psinerror">Solo se admiten de siete a catorce números</p>
             </div>
             <div class="col-12 col-sm-6 mb-3" id="group__email">
               <label for="Telefono">Email</label>
               <input type="text" class="form-control form__input" id="email" name="email" required placeholder="">
+              <p class="psinerror">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
             </div>
           </div>
 
@@ -150,11 +154,13 @@
                 <div class="col-12 col-sm-6 mb-3" id="group__province">
                   <label for="nombre">Provincia</label>
                   <input type="text" class="form-control form__input" id="province" name="province" required placeholder="">
+                  <p class="psinerror">No admite números ni caracteres especiales</p>
                 </div>
 
                 <div class="col-12 col-sm-6 mb-3" id="group__city">
                     <label for="nombre">Ciudad</label>
                     <input type="text" class="form-control form__input" id="city" name="city" required placeholder="">
+                    <p class="psinerror">No admite números ni caracteres especiales</p>
                   </div>
 
             </div>
@@ -162,12 +168,14 @@
           <div class="mb-3" id="group__adress">
             <label for="direccion">Domicilio Completo</label>
             <input type="text" class="form-control form__input"  id="adress" name="adress" required placeholder="">
+            <p class="psinerror">No admite caracteres especiales</p>
           </div>
   
 
             <div class="col-12 col-sm-4 mb-3" id="group__code">
               <label for="codigo-postal">Codigo Postal</label>
               <input type="text" class="form-control form__input" id="code" name="code" required placeholder="">
+              <p class="psinerror">Solo se admiten cuatro números</p>
             </div>
           </div>
   

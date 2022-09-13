@@ -493,6 +493,16 @@ ul {
   display: block;
 }
 
+.psinerror {
+  display: none;
+  color: #bb2929;
+}
+
+.perror {
+  display: block;
+  color: #bb2929;
+}
+
 body {
   background-color: rgb(223, 223, 223);
   overflow-x: hidden;

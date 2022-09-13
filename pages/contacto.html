@@ -118,21 +118,33 @@
 
 <!-- comienza el formulario -->
 
-<form class="formulario">
-  <div class="form-outline mb-4 container col-lg-6">
-    <label class="form-label"  for="form4Example1">Nombre y Apellido</label>
-    <input type="text" placeholder="Colocar nombre y apellido" id="form4Example1" class="form-control" />
+<form class="formulario" id="ContactForm" >
+  <div class="form-outline mb-4 container col-lg-6" id="group__name">
+    <label for="nombre">Nombre y Apellido</label>
+    <input type="text" class="form-control form__input" id="name" name="name" required placeholder="">
+    <p class="psinerror">No admite números ni caracteres especiales</p>
   </div>
 
-  <div class="form-outline mb-4 container col-lg-6">
-    <label class="form-label" for="form4Example2">Correo electrónico</label>
-    <input type="email" id="form4Example2" placeholder="nombre@ejemplo.com" class="form-control" />
+  <div class="form-outline mb-4 container col-lg-6" id="group__email">
+    <label for="Telefono">Email</label>
+    <input type="text" class="form-control form__input" id="email" name="email" required placeholder="">
+    <p class="psinerror">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
   </div>
+
+  <div class="form-outline mb-4 container col-lg-6" id="group__phone">
+    <label for="nombre">Teléfono</label>
+    <input type="text" class="form-control form__input" id="phone" name="phone" required placeholder="">
+    <p class="psinerror">Solo se admiten de siete a catorce números</p>
+  </div>  
 
   <div class="form-outline mb-4 container col-lg-6">
     <label class="form-label" for="form4Example3">Mensaje</label>
-    <textarea class="form-control" placeholder="Introduzca su mensaje" id="form4Example3"></textarea>
+    <textarea class="form-control" id="form4Example3" required placeholder=""></textarea>
   </div>
+
+
+  	<div id="form__menssage">
+		</div>
 
   <div class="container col-lg-6">
     <button type="submit" class="btn-block mb-4 container sendBottom">Enviar</button>
@@ -209,7 +221,10 @@
 <!-- finaliza el footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="../javascript/cart.js"></script>
+    <script src="../javascript/formulariocontacto.js"></script>
 
 </body>
 </html>

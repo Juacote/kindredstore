@@ -34,7 +34,7 @@ orderDetails();
 
 //finaliza funcion que trae el carrito en un listado al formulario de compra
 
-//comienza las validaciones de los inputs del formulacio de compra
+//comienza las validaciones de los inputs del formulario de compra
 
 const form = document.getElementById("form");
 const inputs = document.querySelectorAll("#form input");
@@ -62,7 +62,6 @@ const validateForm = (e) => {
   switch (e.target.name) {
     case "name":
       validateCamp(expresiones.name, e.target, "name");
-      console.log("funca");
       break;
 
     case "surname":
@@ -103,11 +102,24 @@ const validateCamp = (expresion, input, field) => {
     document
       .getElementById(`group__${field}`)
       .classList.add("formulario__grupo-correcto");
+    document
+      .getElementById(`group__${field}`)
+      .lastElementChild.classList.remove("perror");
+    document
+      .getElementById(`group__${field}`)
+      .lastElementChild.classList.add("psinerror");
+
     fields[field] = true;
   } else {
     document
       .getElementById(`group__${field}`)
       .classList.add("form__group-incorrect");
+    document
+      .getElementById(`group__${field}`)
+      .lastElementChild.classList.remove("psinerror");
+    document
+      .getElementById(`group__${field}`)
+      .lastElementChild.classList.add("perror");
     fields[field] = false;
   }
 };
